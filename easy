@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+if (!is_file(__DIR__ . '/vendor/autoload.php') || !is_file(__DIR__ . '/composer.lock')) {
+    echo 'First call - install missing composer dependencies ---' . PHP_EOL;
+    exec('composer install');
+}
+
+require_once __DIR__ . '/vendor/geste/easy-command/bin/easy';

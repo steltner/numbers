@@ -1,0 +1,10 @@
+config/global.php
+config/projects.php
+
+build/
+.idea/
+phpcs.xml
+tests/behat.yml
+tests/.phpunit.result.cache
+tests/phpunit.xml
+vendor/

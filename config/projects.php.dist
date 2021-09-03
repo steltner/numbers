@@ -1,0 +1,21 @@
+<?php declare(strict_types=1);
+
+return [
+    'projects' => [
+        // first one is default and will be used if you do not add optional parameter project
+        [
+            // required, names to call this project
+            'names' => ['easy', 'numbers'],
+            // required, project name/path relative to parent of ROOT
+            'path' => 'numbers',
+            // path to phpunit configuration inside project
+            'phpunit' => 'tests/phpunit.xml',
+            // path to behat configuration inside project
+            'behat' => 'tests/behat.yml',
+            // mess detectors rules to check
+            'phpmd' => [
+                'ruleset' => 'codesize,controversial,design,naming',
+            ],
+        ],
+    ]
+];

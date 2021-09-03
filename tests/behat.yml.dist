@@ -1,0 +1,16 @@
+default:
+  suites:
+    default:
+      filters:
+        tags: '~@skip'
+      paths:
+        - ./behat/features
+      contexts:
+        - Behat\ApiContext:
+
+  extensions:
+    Imbo\BehatApiExtension:
+      apiClient:
+        base_uri: http://localhost:8000
+        timeout: 8.0
+        verify: false

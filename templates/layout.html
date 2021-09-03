@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>gestes Numbers</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/style.css" rel="stylesheet"/>
+    <script src="/application.js"></script>
+</head>
+<body>
+<video autoplay muted loop id="Video">
+    <source src="/background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+</video>
+
+<div class="container">
+    <button id="Pause" title="Start/Stop Video">&#x23F8</button>
+    <div id="Content">
+        <h1>Numbers</h1>
+        <p>Just enter a number of your choice and get interesting information about it</p>
+
+        <div class="row">
+            <p id="Result" class="col-sm-10 offset-sm-1">
+                Find the wisdom in numbers
+            </p>
+        </div>
+
+        <form id="Form">
+            <div class="row">
+                <div class="btn-group col-sm-8 offset-sm-2" role="group">
+                    <input type="radio" class="btn-check" name="type" id="TypeTrivia" value="trivia" autocomplete="off" checked>
+                    <label class="btn btn btn-outline-dark" for="TypeTrivia">Trivia</label>
+
+                    <input type="radio" class="btn-check" name="type" id="TypeYear" value="year" autocomplete="off">
+                    <label class="btn btn btn-outline-dark" for="TypeYear">Year</label>
+
+                    <input type="radio" class="btn-check" name="type" id="TypeDate" value="date" autocomplete="off">
+                    <label class="btn btn btn-outline-dark" for="TypeDate">Date</label>
+
+                    <input type="radio" class="btn-check" name="type" id="TypeMath" value="math" autocomplete="off">
+                    <label class="btn btn btn-outline-dark" for="TypeMath">Math</label>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-4 offset-sm-4">
+                    <select class="form-select" id="Language" name="language" title="Language">
+                        #options#
+                    </select>
+                </div>
+            </div>
+
+            <div id="DefaultNumber">
+                <div class="form-group row">
+                    <div class="col-sm-4 offset-sm-4">
+                        <input type="number" name="number" class="form-control-plaintext" id="Number" placeholder="Random number" title="Number">
+                    </div>
+                </div>
+            </div>
+
+            <div id="DateNumber">
+                <div class="form-group row">
+                    <div class="col-sm-4 offset-sm-4">
+                        <input type="number" name="day" class="form-control-plaintext" id="Day" placeholder="Random day" min="1" max="31" title="Day">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-4 offset-sm-4">
+                        <input type="number" name="month" class="form-control-plaintext" id="Month" placeholder="Random month" min="1" max="12" title="Month">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <button type="submit" class="btn btn-secondary col-sm-2 offset-sm-5">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
