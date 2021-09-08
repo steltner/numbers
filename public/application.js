@@ -78,10 +78,10 @@ window.onload = function () {
     function switchVideo() {
         if (video.paused) {
             video.play();
-            pause.innerHTML = '&#x23f8';
+            pause.innerHTML = '&#x23f8;';
         } else {
             video.pause();
-            pause.innerHTML = '&#x23f5';
+            pause.innerHTML = '&#x23f5;';
         }
     }
 
